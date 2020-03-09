@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/back"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true">
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="400dp"
+android:id="@+id/llMain"
+    android:weightSum="1"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+    <TextView android:id="@+id/txtStep1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:text="Step 1: Keep any name in your mind."
+        android:textSize="14dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        />
+    <TextView android:id="@+id/txtStep2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:text="Step 2: Swipe the column that contains first letter of the name in your mind."
+        android:textSize="14dp"
+        android:layout_weight="0.25"
+
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+    <TextView android:id="@+id/txtStep3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:text="Step 3: Swipe the column that contains Second letter of the name in your mind."
+        android:textSize="14dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.25"
+
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+    <TextView android:id="@+id/txtStep4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:text="Step 4: Swipe the column that contains Third letter of the name and continue the same process until last letter of name in your mind."
+        android:textSize="14dp"
+        android:layout_weight="0.25"
+
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+</LinearLayout>
+    <TextView android:id="@+id/txtStart"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:text="Start"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/llMain"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        />
+
+    </RelativeLayout>
+    </ScrollView>

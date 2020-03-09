@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/sky_blue">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="@color/white"
+            >
+            <LinearLayout android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:orientation="horizontal">
+                <TextView android:id="@+id/title"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_weight="0.9"
+                    android:textColor="@color/white"
+                    />
+                <ImageView android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/help"
+                    android:id="@+id/ivHelp"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.boda.renuka.guessnamegame.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llMainLayout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+       >
+    <LinearLayout android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:weightSum="6"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        android:id="@+id/llData"
+     >
+
+    <TextView
+        android:id="@+id/tvClmn1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:text="A\n\n\nG\n\n\nM\n\n\nS\n\n\nY\n\n"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        android:background="@color/dark_blue"
+        android:paddingTop="20dp"
+       />
+        <TextView
+            android:id="@+id/tvClmn2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="B\n\n\nH\n\n\nN\n\n\nT\n\n\nZ\n\n"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@color/dark_blue"
+            android:paddingTop="20dp"/>
+        <TextView
+            android:id="@+id/tvClmn3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="C\n\n\nI\n\n\nO\n\n\nU\n\n\n\n\n"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@color/dark_blue"
+            android:paddingTop="20dp"/>
+        <TextView
+            android:id="@+id/tvClmn4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="D\n\n\nJ\n\n\nP\n\n\nV\n\n\n\n\n"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@color/dark_blue"
+            android:paddingTop="20dp"/>
+        <TextView
+            android:id="@+id/tvClmn5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="E\n\n\nK\n\n\nQ\n\n\nW\n\n\n\n\n"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@color/dark_blue"
+            android:paddingTop="20dp"/>
+        <TextView
+            android:id="@+id/tvClmn6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/dark_blue"
+            android:text="F\n\n\nL\n\n\nR\n\n\nX\n\n\n\n\n"
+            android:paddingTop="20dp"/>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fbtnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/test"
+        android:layout_gravity="right|end"
+        app:elevation="6dp"
+        app:rippleColor="@null"
+        app:backgroundTint="@null"
+        app:fabSize="mini"
+        android:scaleType="fitEnd"
+        app:pressedTranslationZ="12dp"
+        android:layout_below="@+id/llData"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="18dp" />
+</LinearLayout>
+    <RelativeLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/llguide_screen"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/blackTransparent"
+        >
+
+        <ImageView android:id="@+id/ivSwipdown"
+            android:layout_height="150dp"
+            android:layout_width="50dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/swipe_new"
+           />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:id="@+id/txtGotIt"
+            android:text="Next"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:id="@+id/txtSkip"
+            android:text="Skip"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/txtGuideText"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Swipe down the column which contains first letter of the name"/>
+
+
+        </RelativeLayout>
+
+</FrameLayout>
+    </LinearLayout>
+</ScrollView>
